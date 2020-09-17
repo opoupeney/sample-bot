@@ -1,0 +1,26 @@
+_version: '2.0'
+
+pod:
+  host: develop2.symphony.com
+
+agent:
+  host: develop2.symphony.com
+
+keyManager:
+  host: develop2.symphony.com
+
+bot:
+  username: op.qa.bot
+  privateKeyPath: /Users/olivierpoupeney/Documents/dev/bot/rsa/rsa-private-bot.pem
+
+app:
+  appId: app-olivier
+  privateKeyPath: /Users/olivierpoupeney/Documents/dev/bot/rsa/rsa-private-bot.pem
+
+datafeed:
+  version: v1
+  retry:
+    maxAttempts: 6
+    initialIntervalMillis: 2000
+    multiplier: 1.5
+    maxIntervalMillis: 10000
